@@ -1,0 +1,9 @@
+La page d’accueil : Index.html =C:\Users\maeva\Desktop\Site\index.html 
+La page mission : mission.html =C:\Users\maeva\Desktop\Site\mission.html
+La page membre : infos.html =C:\Users\maeva\Desktop\Site\infos.html
+La page contact : contact.html =C:\Users\maeva\Desktop\Site\contact.html
+La page histoire : histoire..html =C:\Users\maeva\Desktop\Site\histoire..html
+----------------------------------------------------
+La page accident : accident.html = C:\Users\maeva\Desktop\Site\Accident.html
+La page joueur : joueur.html =C:\Users\maeva\Desktop\Site\Joueur.html 
+La page trophée : Trophée.html =C:\Users\maeva\Desktop\Site\Trophée.html

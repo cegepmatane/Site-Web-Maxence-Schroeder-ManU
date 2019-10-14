@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MEMBRE</title>
+    <link rel="stylesheet" type="text/css" href="génerale css/Info.css" />
+    <link rel="stylesheet" type="text/css" href="génerale css/contact.css" />
+</head>
+
+<body>
+	<div id="fond">
+
+	</div>
+	<div id="site">
+		<div id="banner1">
+			<p>Manchester United Fan Page</p>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Acceuil</a></li>
+				<li><a href="mission.html">Mission</a></li>
+				<li><a href="infos.html">Se connecter</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn"><a href="histoire..html"> Histoire </a></button>
+						<div class="dropdown-content">
+						<a href="Accident.html">Accident</a>
+						<a href="Joueur.html">Joueur</a>
+						<a href="Trophée.html">Trophée</a>
+						</div>
+					  </div>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="banner2">
+        </div>
+        <h2><center>Se connecter <center></h2> 
+<form>
+<div id="encoche">
+<table>
+
+<tr>
+<td>Nom:</td><td><input type="text" name="txtNom" maxlength="18" size="18" /></td>
+
+</tr>
+
+<tr>
+<td>Prénom:</td><td><input type="text" name="txtPrenom" maxlength="18" size="18" /></td>
+</tr>
+
+<tr>
+<td>Date de naissance:</td><td><input type="text" name=txtDateNaissance maxlength="18" size="18" /></td>
+</tr>
+
+<tr>
+    <td>Adresse Mail</td><td><input type="text" name="txtMail" maxlength="18" size="18" /></td>
+</tr>
+<br>
+</table>
+   <input type="button" id="poButtonAfficher"value="Envoyer" />
+</div>
+</form>
+<br><br>
+<div id="footer">
+    <h3>Maxence Schroeder | Tous droits réservés</h3>
+    <a href="index.html"> <img id="imagepp" src="décoration/logo.png" alt="perdu.cm" title="Perdu ?" height="100" width="100" /> </a>
+</body>
+</html>
+
+<script language="javascript" >
+
+window.onload = pvRemplir;
+document.forms[0].poButtonAfficher.onclick = pvControleSaisie;
+
+function pvRemplir()
+{
+    var ioOption;
+    var isValeur;
+    var iiIndex;
+
+    iaTableauValeur = new Array("bleu", "rouge", "jaune", "vert");
+
+   
+
+
+    for (iiIndex=0; iiIndex < iaTableauValeur.length; iiIndex++)
+    {
+        isValeur =  iaTableauValeur[iiIndex];
+        ioOption = new Option(isValeur);
+
+        document.forms[0].lstColor.add(ioOption);
+    }
+
+    document.forms[0].optMetier.selectedIndex =-1;
+  
+
+
+
+}
+
+function pvControleSaisie()
+{
+
+    for(iiIndex=0; iiIndex < document.forms[0].length-2; iiIndex++)
+    {
+
+      isValeur = document.forms[0].elements[iiIndex].value;
+      isName = document.forms[0].elements[iiIndex].name;
+     
+     
+       if(isValeur == "")
+       {
+          isMessage = "veuillez remplir votre " + isName + "\n";
+        
+          alert(isMessage);
+          document.forms[0].elements[iiIndex].focus();
+          return false;
+         
+       }
+     
+        else if(isValeur != "")
+         {
+
+            isMessage = isValeur +"\n"; 
+            alert(isMessage);
+         }
+
+    
+   }
+   
+}
+
+</script>
