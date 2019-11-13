@@ -1,0 +1,54 @@
+ #liste-articles
+        {
+            position:relative;
+            width:606px;
+            margin-left:auto;
+            margin-right:auto;
+	
+            overflow:hidden;
+        }
+        
+        #liste-articles .article
+        {
+            position:relative;
+            border:solid 3px black;
+            width:600px;
+            height:240px;
+            margin-bottom:10px;
+        }
+        #liste-articles .article *{
+		float:left;
+		}
+        #liste-articles .article img
+        {
+            width:200px;
+            height:200px;   
+            
+            top:10px;
+            left:10px;
+        }
+
+        #liste-articles .article h4
+        {
+            
+            width:370px;
+            top:10px;
+            left:240px;
+        }
+        
+        #liste-articles .article p
+        {
+           
+            width:350px;
+            top:30px;
+            left:240px;       
+            text-align:justify;
+        }
+        
+        #liste-articles .article a
+        {
+            
+            width:370px;
+            bottom:10px;
+            left:240px;            
+        }

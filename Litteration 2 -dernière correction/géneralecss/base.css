@@ -1,0 +1,56 @@
+/*
+    POLICE D'ECRITURE
+*/
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCs6KVjbNBYlgoKcg72j00.woff2) format('woff2');
+}
+
+/*
+    STYLE DE BASE
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar {
+  font-size: 18px;
+  background-color: #1B3C59;
+  height:3em;
+
+}
+.menu {
+  background-color: #1B3C59;
+  list-style-type: none;
+  
+  
+}
+
+
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+
+.menu a{
+    text-align: center;
+    transition-duration: 0.2s;
+    padding: 1em 0.5em;
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color: #275177;
+}
+
+.content{
+  margin: 30px;
+}

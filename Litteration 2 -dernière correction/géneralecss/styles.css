@@ -1,0 +1,63 @@
+/* positionnement en Flex pour le menu */
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu a {
+    display: flex;
+    justify-content: center;
+}
+
+/*-------------Menu hamburger------------------------------------*/
+
+
+/* .navbar-toggle= classe utilisée dans le javascript pour ouvrir le menu */
+
+/* position et visibilité de l'icone hamburger */
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 1.00em;
+    margin-left: 2vh;
+}
+
+
+/* tablette */
+@media screen and (min-width: 768px) and (max-width: 980px) {
+    .menu {
+        justify-content: space-between;
+    }
+}
+
+/* cellulaire */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+
+    }
+
+    /* cacher menu */
+
+    .menu {
+        display: none;
+        z-index: 1;
+    }
+
+    /*barre de menu */
+    .navbar {
+        display: block;
+        position: relative;
+    }
+
+    /* classe utilisée dans le javascript pour ouvrir le menu */
+    .active {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

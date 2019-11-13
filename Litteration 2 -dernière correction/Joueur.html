@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>JOUEUR</title>
+	<link rel="stylesheet" type="text/css" href="géneralecss/style.css" />
+	<link rel="stylesheet" type="text/css" href="géneralecss/styles.css" />
+    <!-- Charger une bibliothèque d'icônes pour afficher un menu de hamburgers
+    Pour utiliser https://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta charset="utf-8">
+	<style>
+		
+		table, td, th
+		{
+			border:solid 1px black;
+			border-collapse:collapse;
+
+		}
+		td, th
+		{
+			height:25px;
+			padding:5px;
+			text-align:center;
+			background-color: whitesmoke;
+		}
+		.tableaujoueur{
+			position: absolute;
+			top: 250px;
+			left: 90px;
+		}
+		.vignette-pokemon
+		{
+			margin: 10px;
+			background-color:darkred;
+			height:173px;
+			width:200px;
+			border:5px black solid;
+			border-radius:50px;
+			position: relative;
+			top: 6px;
+			left: 800px;
+			margin-right:10px;
+			cursor:pointer;
+		}
+		.vignette-pokemon:hover
+		{
+			opacity:0.7;
+			cursor:pointer;
+		}
+		.vignette-pokemon img
+		{
+			height:160px;
+			position: relative;
+			top: 4px;
+			left:17px;
+		}
+		#zone-affichage
+		{
+			background-color: whitesmoke;
+			width:700px;
+			height:900px;
+			float:left;
+			margin-left:200px;
+			margin-top:10px;
+			border:solid 5px #333333;
+			border-radius:30px;
+			position: absolute;
+			right: 90px;
+			top: 250px;
+		}
+		.detail-pokemon
+		{
+			display:none;
+			width:700px;
+			height:700px;
+			border:solid 1px black;			
+		}
+		
+		.pokemon-nom
+		{
+			position: relative;
+			left: 255px;
+			top: 50px;
+			height:10px;
+			font-size:30px;
+			margin-right:auto;
+			margin-left:auto;
+		}
+		.pokemon-description
+		{
+			position: relative;
+			left: 150px;
+			top: -200px;	
+			width:400px;
+			font-size: 25px;
+		}
+		
+		.pokemon-illustration
+		{
+			position: relative;
+			left: 220px;
+			width:300px;
+			top: 500px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="fond">
+	</div>
+	<div id="site">
+		<div id="banner1">
+            <p>Manchester United Fan Page</p>
+        </div>
+      
+		<div id="menu">
+        <nav class="navbar">
+
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                   <i class="fa fa-bars"></i>  <!-- icône burger de Fontawesome-->
+                
+                 
+            </span>
+        <ul class="menu" id="js-menu">
+				<li><a href="index.html">Acceuil</a></li>
+				<li><a href="mission.html">Mission</a></li>
+				<li><a href="infos.html">Se connecter</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="lightbox.html">Lightbox</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+				<li>
+					<div class="dropdown">
+						<a class="dropbtn" href="histoire.html"> Histoire </a>
+						<div class="dropdown-content">
+						<a href="Accident.html">Accident</a>
+						<a href="Joueur.html">Joueur</a>
+						<a href="Trophée.html">Trophée</a>
+						
+						</div>
+            </div>
+				</li>
+          </ul>
+        </nav>
+		</div>
+    </div>
+		<div id="banner2">
+            <br>
+        </div>				
+		<div class="vignette-pokemon" id="celebi">
+			<img src="décoration/mini/waynerooney.png" alt="perdu.cm"/>
+		</div>
+		<div class="vignette-pokemon" id="qulbutoke">
+			<img src="décoration/mini/paul_pogba-removebg-preview.png" alt="perdu.cm"/>
+		</div>
+		<div class="vignette-pokemon" id="togepi">
+			<img src="décoration/mini/rashford.png" alt="perdu.cm"/>
+		</div>
+		<div class="vignette-pokemon" id="ronflex">
+				<img src="décoration/mini/martial-200x200-removebg-preview.png" alt="perdu.cm"/>
+			</div>
+			<div class="vignette-pokemon" id="pikachu">
+					<img src="décoration/mini/david-de-gea-1-200x200-removebg-preview.png" alt="perdu.cm"/>
+				</div>
+		<div id="zone-affichage">	
+		</div>
+		
+		
+		<div class="detail-pokemon" id="detail-celebi">
+			<h4 class="pokemon-nom">Wayne Rooney</h4>
+			
+			<img class="pokemon-illustration" src="décoration/waynerooney.png" alt="perdu.cm"/>
+			
+			<div class="pokemon-description">
+				<h5>Physionomie et attitudes</h5>
+				<p>Le Celebi est un esprit ressemblant a une fée. Il est l'esprit protecteur de la forêt et peut voyager dans le temps. Il est appelé "Gardien de la forêt".</p>
+		
+				<h5>Différences mâle/femelle</h5>
+				<p>Ce Pokémon est asexué, il n'y a donc pas de Celebi mâle ou femelle.</p>
+		
+				<p>Dans Pokémon Donjon Mystère : Explorateurs de l'Ombre et du Temps, un Celebi chromatique est désigné comme femelle, même s'il reste asexué.</p>
+				
+				<a href="http://www.pokepedia.fr/Celebi">Voir la fiche Pokédia</a>
+				
+			</div>
+		
+		</div>
+		<div class="detail-pokemon" id="detail-qulbutoke">
+			<h4 class="pokemon-nom">Paul Pogba</h4>
+			
+			<img class="pokemon-illustration" src="décoration/416x416.jpg" alt="perdu.cm"/>
+			
+			<div class="pokemon-description">
+				<h5>Physionomie et attitudes</h5>
+				<p>Le Celebi est un esprit ressemblant a une fée. Il est l'esprit protecteur de la forêt et peut voyager dans le temps. Il est appelé "Gardien de la forêt".</p>
+		
+				<h5>Différences mâle/femelle</h5>
+				<p>Ce Pokémon est asexué, il n'y a donc pas de Celebi mâle ou femelle.</p>
+		
+				<p>Dans Pokémon Donjon Mystère : Explorateurs de l'Ombre et du Temps, un Celebi chromatique est désigné comme femelle, même s'il reste asexué.</p>
+				
+				<a href="http://www.pokepedia.fr/Qulbutoke">Voir la fiche Pokédia</a>
+				
+			</div>
+		
+		</div>    
+		<div class="detail-pokemon" id="detail-togepi">
+			<h4 class="pokemon-nom">Marcus Rashford</h4>
+			
+			<img class="pokemon-illustration" src="décoration/rashford500x500.png" alt="perdu.cm"/>
+			
+			<div class="pokemon-description">
+				<h5>Physionomie et attitudes</h5>
+				<p>Le Celebi est un esprit ressemblant a une fée. Il est l'esprit protecteur de la forêt et peut voyager dans le temps. Il est appelé "Gardien de la forêt".</p>
+		
+				<h5>Différences mâle/femelle</h5>
+				<p>Ce Pokémon est asexué, il n'y a donc pas de Celebi mâle ou femelle.</p>
+		
+				<p>Dans Pokémon Donjon Mystère : Explorateurs de l'Ombre et du Temps, un Celebi chromatique est désigné comme femelle, même s'il reste asexué.</p>
+				
+				<a href="http://www.pokepedia.fr/Qulbutoke">Voir la fiche Pokédia</a>
+				
+			</div>
+		
+		</div> 
+		<div class="detail-pokemon" id="detail-ronflex">
+			<h4 class="pokemon-nom">Anthony Martial</h4>
+			
+			<img class="pokemon-illustration" src="décoration/1443.jpg" alt="perdu.cm"/>
+			
+			<div class="pokemon-description">
+				<h5>Physionomie et attitudes</h5>
+				<p>Le Celebi est un esprit ressemblant a une fée. Il est l'esprit protecteur de la forêt et peut voyager dans le temps. Il est appelé "Gardien de la forêt".</p>
+		
+				<h5>Différences mâle/femelle</h5>
+				<p>Ce Pokémon est asexué, il n'y a donc pas de Celebi mâle ou femelle.</p>
+		
+				<p>Dans Pokémon Donjon Mystère : Explorateurs de l'Ombre et du Temps, un Celebi chromatique est désigné comme femelle, même s'il reste asexué.</p>
+				
+				<a href="http://www.pokepedia.fr/Qulbutoke">Voir la fiche Pokédia</a>
+				
+			</div>
+		
+		</div> 
+		<div class="detail-pokemon" id="detail-pikachu">
+			<h4 class="pokemon-nom">David De Gea</h4>
+			
+			<img class="pokemon-illustration" src="décoration/david-de-gea.png" alt="perdu.cm"/>
+			
+			<div class="pokemon-description">
+				<h5>Physionomie et attitudes</h5>
+				<p>Le Celebi est un esprit ressemblant a une fée. Il est l'esprit protecteur de la forêt et peut voyager dans le temps. Il est appelé "Gardien de la forêt".</p>
+		
+				<h5>Différences mâle/femelle</h5>
+				<p>Ce Pokémon est asexué, il n'y a donc pas de Celebi mâle ou femelle.</p>
+		
+				<p>Dans Pokémon Donjon Mystère : Explorateurs de l'Ombre et du Temps, un Celebi chromatique est désigné comme femelle, même s'il reste asexué.</p>
+				
+				<a href="http://www.pokepedia.fr/Qulbutoke">Voir la fiche Pokédia</a>
+				
+			</div>
+		
+		</div> 
+		<div class="tableaujoueur">
+<table>
+	<tr><th colspan="5">JOUEUR</th></tr>
+	<tr><th>#</th><th>Joueur</th><th>Age</th><th>Contrat jusqu'en</th><th>Valeur</th></tr>
+	<tr><td>1</td><td>David de Gea</td><td>28 ans </td><td>2023</td><td>65 mio €</td></tr>
+	<tr><td>22</td><td>Sergio Romero</td><td>32 ans</td><td>2021</td><td>3.5 mio €</td></tr>
+	<tr><td>13</td><td>Lee Grant</td><td>36 ans</td><td>2020</td><td>750 k €</td></tr>
+	<tr><td>5</td><td>Harry Maguire</td><td>26 ans</td><td>2025</td><td>70 mio €</td></tr>
+	<tr><td>2</td><td>Victor Lindelôf</td><td>25 ans</td><td>2024</td><td>35 mio €</td></tr>
+	<tr><td>3</td><td>Eric Bailly</td><td>25 ans</td><td>2020</td><td>25 mio €</td></tr>
+	<tr><td>4</td><td>Phil Jones</td><td>27 ans</td><td>2023</td><td>15 mio €</td></tr>
+	<tr><td>16</td><td>Marcos Rojo</td><td>29 ans</td><td>2021</td><td>10 mio €</td></tr>
+	<tr><td>38</td><td>Axel Tuanzebe</td><td>21 ans</td><td>2022</td><td>7 mio €</td></tr>
+	<tr><td>23</td><td>Luke Shaw</td><td>24 ans</td><td>2023</td><td>30 mio €</td></tr>
+	<tr><td>18</td><td>Ashley Young</td><td>34 ans</td><td>2020</td><td>5 mio €</td></tr>
+	<tr><td>29</td><td>Aaron Wan-Bissaka</td><td>21 ans</td><td>2024</td><td>40 mio €</td></tr>
+	<tr><td>20</td><td>Diogo Dalot</td><td>20 ans</td><td>2023</td><td>20 mio €</td></tr>
+	<tr><td>24</td><td>Timothy Fosu-Mensah</td><td>21 ans</td><td>2020</td><td>7 mio €</td></tr>
+	<tr><td>31</td><td>Nemanja Matic</td><td>31 ans</td><td>2020</td><td>25 mio €</td></tr>
+	<tr><td>6</td><td>Paul Pogba</td><td>26 ans</td><td>2021</td><td>100 mio €</td></tr>
+	<tr><td>17</td><td>Fred</td><td>26 ans</td><td>2023</td><td>25 mio €</td></tr>
+	<tr><td>39</td><td>Scott McTominay</td><td>22 ans</td><td>2023</td><td>20 mio €</td></tr>
+	<tr><td>8</td><td>Juan Mata</td><td>31 ans</td><td>2021</td><td>20 mio €</td></tr>
+	<tr><td>15</td><td>Andreas Pereira</td><td>23 ans</td><td>2023</td><td>15 mio €</td></tr>
+	<tr><td>9</td><td>Anthony Martial</td><td>23 ans</td><td>2024</td><td>60 mio €</td></tr>
+	<tr><td>21</td><td>daniel James</td><td>21 ans</td><td>2024</td><td>25 mio €</td></tr>
+	<tr><td>14</td><td>Jesse Lingard</td><td>26 ans</td><td>2021</td><td>40 mio €</td></tr>
+	<tr><td>10</td><td>Marcus Rashford</td><td>21 ans</td><td>2023</td><td>80 mio €</td></tr> 
+</table>
+</div>
+
+<br><br><br><br><br><br><br>
+		<div id="footer">
+			<h3>Maxence Schroeder | Tous droits réservés</h3>
+		</div>
+		<script src="Javascript/menu.js"></script>
+		<script src="Javascript/pokemon.js"></script>
+	</body>
+</html>
