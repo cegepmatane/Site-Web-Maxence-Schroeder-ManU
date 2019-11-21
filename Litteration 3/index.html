@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <title>ACCUEIL</title>
+          <link rel="stylesheet" type="text/css" href="géneralecss/style.css" />
+          <link rel="stylesheet" type="text/css" href="géneralecss/styles.css" />
+          <!-- Charger une bibliothèque d'icônes pour afficher un menu de hamburgers
+          Pour utiliser https://fontawesome.com/ -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta charset="utf-8">
+      </head>
+      <body>
+              <div id="banner1">
+                  <p>Manchester United Fan Page</p>
+              </div>
+              <div id="menu">
+              <nav class="navbar">
+      
+                  <span class="navbar-toggle" id="js-navbar-toggle">
+                         <i class="fa fa-bars"></i>  <!-- icône burger de Fontawesome-->
+                      
+                       
+                  </span>
+              <ul class="menu" id="js-menu">
+                      <li><a href="index.html">Acceuil</a></li>
+                      <li><a href="mission.html">Mission</a></li>
+                      <li><a href="infos.html">Se connecter</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="lightbox.html">Lightbox</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="galerie.html">Galerie</a></li>
+                      <li>
+                          <div class="dropdown">
+                              <a class="dropbtn" href="histoire.html"> Histoire </a>
+                              <div class="dropdown-content">
+                              <a href="Accident.html">Accident</a>
+                              <a href="Joueur.html">Joueur</a>
+                              <a href="Trophée.html">Trophée</a>
+                              
+                              </div>
+                  </div>
+                      </li>
+                </ul>
+              </nav>
+              </div>
+              <div id="banner2">
+                  <br>
+				<div id="compte_a_rebours">
+                        <div class="rebourd"></div>
+                </div>
+              </div>
+              <br><br>
+            <a href="décoration/rosen.png"> <img id="image" src="décoration/rosen.png" alt="perdu.cm" title=" "/> </a>
+		<br><br> 
+        <br><br><br><br><br><br><br><br>
+		<div id="footer">
+			<h3>Maxence Schroeder | Tous droits réservés</h3>
+            <a href="décoration/tableau.PNG"> <img id="tableau" src="décoration/tableau.PNG" alt="perdu.cm" title=" " height="400" width="400" /> </a>
+
+		</div>
+    <script src="Javascript/menu.js"></script>
+    <script>
+
+        function compte_a_rebours()
+        {
+            var compte_a_rebours = document.getElementById("compte_a_rebours");
+        
+            var date_actuelle = new Date();
+            var date_evenement = new Date("dec 25 00:00:00 2019");
+            var total_secondes = (date_evenement - date_actuelle) / 1000;
+        
+            var prefixe = "Prochain Match dans ";
+            if (total_secondes < 0)
+            {
+                prefixe = "Compte à rebours terminé il y a "; 
+                total_secondes = Math.abs(total_secondes); //  valeur absolue
+            }
+        
+            if (total_secondes > 0)
+            {
+                var jours = Math.floor(total_secondes / (60 * 60 * 24));
+                var heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
+                minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
+                secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
+        
+                var et = "et";
+                var mot_jour = "jours,";
+                var mot_heure = "heures,";
+                var mot_minute = "minutes,";
+                var mot_seconde = "secondes";
+        
+                if (jours == 0)
+                {
+                    jours = '';
+                    mot_jour = '';
+                }
+                else if (jours == 1)
+                {
+                    mot_jour = "jour,";
+                }
+        
+                if (heures == 0)
+                {
+                    heures = '';
+                    mot_heure = '';
+                }
+                else if (heures == 1)
+                {
+                    mot_heure = "heure,";
+                }
+        
+                if (minutes == 0)
+                {
+                    minutes = '';
+                    mot_minute = '';
+                }
+                else if (minutes == 1)
+                {
+                    mot_minute = "minute,";
+                }
+        
+                if (secondes == 0)
+                {
+                    secondes = '';
+                    mot_seconde = '';
+                    et = '';
+                }
+                else if (secondes == 1)
+                {
+                    mot_seconde = "seconde";
+                }
+        
+                if (minutes == 0 && heures == 0 && jours == 0)
+                {
+                    et = "";
+                }
+        
+                compte_a_rebours.innerHTML = prefixe + jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + et + ' ' + secondes + ' ' + mot_seconde;
+            }
+            else
+            {
+                compte_a_rebours.innerHTML = 'Compte à rebours terminé.';
+            }
+        
+            var actualisation = setTimeout("compte_a_rebours();", 1000);
+        }
+        compte_a_rebours();
+        </script>
+</body>
+
+</html>

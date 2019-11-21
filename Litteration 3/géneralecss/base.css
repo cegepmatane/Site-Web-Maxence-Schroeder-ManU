@@ -1,0 +1,22 @@
+/*
+    POLICE D'ECRITURE
+*/
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCs6KVjbNBYlgoKcg72j00.woff2) format('woff2');
+}
+
+/*
+    STYLE DE BASE
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Ubuntu', sans-serif;
+    float: right;
+}
