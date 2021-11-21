@@ -34,6 +34,34 @@ body {
 	position: relative;
 	background-color: darkred;
 }
+.social-footer {
+	padding: 1rem;
+	background: #8a8a8a;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+  }
+  
+  .social-footer .social-footer-icons li:last-of-type {
+	margin-right: 0;
+  }
+  
+  .social-footer .social-footer-icons .fa {
+	font-size: 1.3rem;
+	color: #fefefe;
+  }
+  
+  .social-footer .social-footer-icons .fa:hover {
+	color: #4a4a4a;
+	transition: color 0.3s ease-in;
+  }
+  
 
 #menu ul {
 	float: left;
@@ -41,6 +69,7 @@ body {
 	position: relative;
 	padding-top: 15px;
 	margin-left: -60px;
+	text-align: ;
 }
 
 #menu ul li {
